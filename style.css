@@ -1,0 +1,134 @@
+body {
+    background-color: #fffff0;
+    color: #111110;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    text-align: center;
+    padding: 2vw;
+}
+
+/* Headings */
+#main h1 {
+    font-size: clamp(30px, 6vw, 80px);
+    margin: 0.5vw 0;
+}
+
+#main h3 {
+    font-size: clamp(18px, 3vw, 40px);
+    margin: 0.5vw 0;
+}
+
+/* Horizontal line */
+#main_hr {
+    border-style: dashed;
+    border-width: 0.5vw;
+    margin: 2vw 0;
+}
+
+/* Image */
+img {
+    border-radius: 20%;
+    width: clamp(150px, 70vw, 500px);
+    height: auto;
+    display: block;
+    margin: 2vw auto;
+}
+
+/* List */
+ul {
+    font-size: clamp(18px, 2.5vw, 24px);
+    list-style-type: none;
+    padding: 0;
+    margin: 2vw 0;
+}
+
+ul li {
+    margin: 1em 0;
+    line-height: 1.5;
+}
+
+/* Bold text */
+ul li b {
+    color: #111110;
+}
+
+/* Days counter */
+#days-count {
+    font-size: clamp(24px, 4vw, 60px);
+    font-weight: bold;
+}
+
+#main .link-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+    margin: 2vw 0;
+    flex-wrap: wrap;
+}
+
+#main .link-card {
+    flex: 0 0 30%;
+    text-align: center;
+    margin: 1vw 0;
+}
+
+#main .link-card a {
+    display: block;
+    width: 100%;
+}
+
+#main .link-card a img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover animations */
+#main .link-card:nth-child(1) a:hover img {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+#main .link-card:nth-child(2) a:hover img {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+#main .link-card:nth-child(3) a:hover img {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+/*logo*/
+#main .logo {
+    width: 90vw;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 2vw auto;
+    border-radius: 10%;
+    transition: transform 0.5s ease;
+}
+
+/* Hover effect */
+#main .logo:hover {
+    transform: scale(1.1); /* scale up on hover */
+}
+
+#copyright {
+    text-align: center;
+    font-size: clamp(12px, 1.5vw, 16px);
+    color: #111110;
+    margin: 3vw 0 1vw 0;
+}
+
+
+@media (max-width: 600px) {
+    #main .link-card {
+        flex: 0 0 80%;
+    }
+}
